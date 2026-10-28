@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rossierayt-datasim_jd113"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别数据合成与仿真工程师·KV Cache 复用与前缀共享上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rossierayt" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rossierayt.github.io"
+Repository = "https://github.com/rossierayt/datasim_jd113"
+Issues = "https://github.com/rossierayt/datasim_jd113/issues"
+
+[project.scripts]
+datasim_jd113 = "datasim_jd113:main"
+
+[tool.setuptools]
+py-modules = ["datasim_jd113"]
